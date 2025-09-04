@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</style>
+</head>
+<body>
+
+    <div class="demo-controls">
+        <label for="login-toggle">Toggle Logged-In State:</label>
+        <input type="checkbox" id="login-toggle">
+    </div>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="/" class="header-logo" aria-label="Portal Home"><img src="https://placehold.co/200x50/183850/FFFFFF?text=PORTAL+LOGO" alt="Portal Logo" onerror="this.onerror=null;this.src='https://placehold.co/200x50/183850/FFFFFF?text=LOGO';"></a>
+            <nav class="main-nav" id="main-navigation">
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li class="mega-menu-item"><a href="#" aria-haspopup="true" aria-expanded="false">Pensions Hub <span class="mdi mdi-chevron-down"></span></a><div class="mega-menu"><div class="container mega-menu-inner"><div class="mega-menu-promo"><h3><span class="mdi mdi-compass-outline"></span>Pensions Hub</h3><p>Find information and guides relevant to your pension journey.</p></div><div class="mega-menu-links-grid"><ul><li><a href="#"><span class="mdi mdi-account-plus-outline"></span>I'm new to my pension scheme</a></li><li><a href="#"><span class="mdi mdi-file-document-edit-outline"></span>I want to make some pension changes</a></li><li><a href="#"><span class="mdi mdi-account-switch-outline"></span>I have a change in circumstances</a></li><li><a href="#"><span class="mdi mdi-trending-up"></span>I'm planning my retirement</a></li><li><a href="#"><span class="mdi mdi-human-greeting-variant"></span>I'm a retired member</a></li><li><a href="#"><span class="mdi mdi-emoticon-sad-outline"></span>I want to report a death</a></li></ul></div></div></div></li>
+                    <li class="mega-menu-item"><a href="#" aria-haspopup="true" aria-expanded="false">Help & Support <span class="mdi mdi-chevron-down"></span></a><div class="mega-menu"><div class="container mega-menu-inner"><div class="mega-menu-promo"><h3><span class="mdi mdi-lifebuoy"></span>Help & Support</h3><p>Find the answers you need or get in touch with our team.</p></div><div class="mega-menu-links-grid"><ul><li><a href="#"><span class="mdi mdi-phone-outline"></span>Contact Us</a></li><li><a href="#"><span class="mdi mdi-help-circle-outline"></span>Frequently asked questions</a></li><li><a href="#"><span class="mdi mdi-book-open-page-variant-outline"></span>Guides and resources</a></li></ul></div></div></div></li>
+                    <li class="mega-menu-item role-conditional" data-roles="active,deferred,pensioner" style="display: none;"><a href="#" aria-haspopup="true" aria-expanded="false">My Documents <span class="mdi mdi-chevron-down"></span></a><div class="mega-menu"><div class="container mega-menu-inner"><div class="mega-menu-promo"><h3><span class="mdi mdi-file-document-multiple-outline"></span>My Documents</h3><p>Access your statements, letters, and important forms.</p></div><div class="mega-menu-links-grid"><ul><li><a href="#"><span class="mdi mdi-file-chart-outline"></span>Annual Statements</a></li><li><a href="#"><span class="mdi mdi-email-outline"></span>Correspondence</a></li><li><a href="#"><span class="mdi mdi-account-heart-outline"></span>Nomination Forms</a></li><li><a href="#"><span class="mdi mdi-book-open-page-variant-outline"></span>Scheme Guides</a></li></ul></div></div></div></li>
+                    <li class="role-conditional" data-roles="active,deferred,pensioner" style="display: none;"><a href="/faqs">FAQs</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="role-conditional" data-roles="" style="display: block;"><a href="/login" class="button button-primary">Log In</a></div>
+                <div class="header-actions-logged-in role-conditional" data-roles="active,deferred,pensioner" style="display: none;"><button class="notification-button" aria-label="View 3 unread notifications"><span class="mdi mdi-bell"></span><span class="notification-count">3</span></button><div class="user-menu"><button class="user-menu-toggle" aria-haspopup="true" aria-expanded="false">Hi, John <span class="mdi mdi-chevron-down"></span></button><div class="user-menu-dropdown"><p class="last-login-info">Last logged in: 22/08/2025 at 10:42</p><ul><li><a href="/my-details">My Details</a></li><li><a href="/logout">Log Off</a></li></ul></div></div></div>
+            </div>
+            <button class="mobile-nav-toggle" aria-controls="main-navigation" aria-expanded="false"><span class="sr-only">Menu</span><span class="mdi mdi-menu"></span></button>
+        </div>
+    </header>
+
+    <!-- LOGGED-OUT VIEW -->
+    <div id="logged-out-view">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb"><div class="container"><ol class="breadcrumb-list"><li><a href="#">Home</a></li><li class="separator">/</li><li><a href="#">Help & Support</a></li><li class="separator">/</li><li class="current-page" aria-current="page">Contact Us</li></ol></div></nav>
+        <header class="hero-two-column"><div class="container"><div class="hero-content"><h1>Contact Us</h1><p>Find the right contact method for your enquiry. Whether you're a member, a third party, or new to our funds, we'll direct you to the right place.</p></div><div class="hero-icon-container"><span class="mdi mdi-forum-outline" aria-hidden="true"></span></div></div></header>
+        <main>
+            <section class="triage-intro"><div class="container"><h2>To get started, please tell us who you are.</h2><p>This helps us provide the correct information and contact options for your specific needs.</p></div></section>
+            <section class="triage-grid-section"><div class="container"><div class="triage-grid">
+                <div class="triage-card" data-target="memberContent" role="button" tabindex="0"><div class="card-content"><div class="card-header"><span class="mdi mdi-account-circle-outline"></span><h3>Existing Member</h3></div><p class="card-subtext">Log in to send a secure message, view your details, or manage your account.</p></div></div>
+                <div class="triage-card" data-target="professionalContent" role="button" tabindex="0"><div class="card-content"><div class="card-header"><span class="mdi mdi-briefcase-outline"></span><h3>Financial Professional</h3></div><p class="card-subtext">For IFAs and Pension Providers making enquiries on behalf of a client.</p></div></div>
+                <div class="triage-card" data-target="representativeContent" role="button" tabindex="0"><div class="card-content"><div class="card-header"><span class="mdi mdi-account-heart-outline"></span><h3>On Behalf of a Member</h3></div><p class="card-subtext">For next of kin, family members with Power of Attorney, or other representatives.</p></div></div>
+                <div class="triage-card" data-target="prospectiveContent" role="button" tabindex="0"><div class="card-content"><div class="card-header"><span class="mdi mdi-account-plus-outline"></span><h3>Prospective Member</h3></div><p class="card-subtext">About to join a scheme or fund? Ask us a question or request information.</p></div></div>
+            </div></div></section>
+            <section id="dynamic-content-area"><div class="container">
+                <div id="memberContent" class="content-panel">
+                    <div class="card-header"><span class="mdi mdi-lock-outline"></span><h3>Log in to your account</h3></div>
+                    <p>Access the Secure Message Centre and manage your account by logging in below.</p>
+                    <form>
+                        <div class="form-group" style="margin-bottom: 1rem;"><label for="member-email">Email</label><input type="email" id="member-email" required></div>
+                        <div class="form-group" style="margin-bottom: 1rem;"><label for="member-password">Password</label><input type="password" id="member-password" required></div>
+                        <div class="form-group"><label for="member-scheme">What's the name of your fund or scheme?</label><input type="text" id="member-scheme" required></div>
+                        <div class="form-actions"><button type="submit" class="btn btn-primary">Log In</button></div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; font-size: 0.9rem;">
+                            <span>Not registered yet? <a href="#">Register here</a></span>
+                            <a href="#">Having trouble logging in?</a>
+                        </div>
+                    </form>
+                </div>
+                <div id="professionalContent" class="content-panel"><h3>Contact Form for Financial Professionals</h3><p>Please provide the details below. We aim to respond within 2 working days.</p><form><div class="form-grid"><div class="form-group"><label for="prof-name">Your Name</label><input type="text" id="prof-name" required></div><div class="form-group"><label for="prof-firm">Your Firm's Name</label><input type="text" id="prof-firm" required></div><div class="form-group"><label for="prof-fca">FCA Number</label><input type="text" id="prof-fca"></div><div class="form-group"><label for="prof-email">Your Email Address</label><input type="email" id="prof-email" required></div><div class="form-group"><label for="prof-client-name">Member's Full Name (Client)</label><input type="text" id="prof-client-name" required></div><div class="form-group"><label for="prof-client-policy">Member's Policy Number</label><input type="text" id="prof-client-policy"></div><div class="form-group full-width"><label for="prof-message">Your Message</label><textarea id="prof-message" required></textarea></div></div><div class="form-actions"><button type="submit" class="btn btn-primary">Submit Enquiry</button></div></form></div>
+                <div id="representativeContent" class="content-panel"><h3>Contact Form for Representatives</h3><div class="privacy-warning"><strong>Important:</strong> For security, please do not include sensitive personal or financial details in this message. We will contact you via a secure method to verify your identity before discussing a member's account.</div><form><div class="form-grid"><div class="form-group"><label for="rep-name">Your Full Name</label><input type="text" id="rep-name" required></div><div class="form-group"><label for="rep-relationship">Your Relationship to Member</label><input type="text" id="rep-relationship" placeholder="e.g., Spouse, Power of Attorney" required></div><div class="form-group"><label for="rep-email">Your Email Address</label><input type="email" id="rep-email" required></div><div class="form-group"><label for="rep-phone">Your Phone Number</label><input type="tel" id="rep-phone" required></div><div class="form-group"><label for="rep-member-name">Member's Full Name</label><input type="text" id="rep-member-name" required></div><div class="form-group"><label for="rep-member-dob">Member's Date of Birth</label><input type="text" id="rep-member-dob" placeholder="DD/MM/YYYY"></div><div class="form-group full-width"><label for="rep-message">Reason for your enquiry</label><textarea id="rep-message" required></textarea></div></div><div class="form-actions"><button type="submit" class="btn btn-primary">Submit Enquiry</button></div></form></div>
+                <div id="prospectiveContent" class="content-panel"><h3>Interested in joining us?</h3><p>We'd be happy to answer any questions you have. Please leave your details below and a member of our team will be in touch.</p><form><div class="form-grid"><div class="form-group"><label for="prospect-name">Your Name</label><input type="text" id="prospect-name" required></div><div class="form-group"><label for="prospect-email">Your Email Address</label><input type="email" id="prospect-email" required></div><div class="form-group full-width"><label for="prospect-message">Your Question</label><textarea id="prospect-message" required></textarea></div></div><div class="form-actions"><button type="submit" class="btn btn-primary">Send Question</button></div></form></div>
+            </div></section>
+        </main>
+    </div>
+
+    <!-- LOGGED-IN VIEW (Hidden by default) -->
+    <div id="logged-in-view" style="display: none;">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb"><div class="container"><ol class="breadcrumb-list"><li><a href="#">Home</a></li><li class="separator">/</li><li><a href="#">Help & Support</a></li><li class="separator">/</li><li class="current-page" aria-current="page">Contact Us</li></ol></div></nav>
+        <header class="page-header"><div class="container"><h1>Secure Message Centre</h1><p>Welcome, John. Here you can send secure messages to our team and view a complete history of your past conversations. All communications here are encrypted and private.</p></div></header>
+        <main class="container">
+            <div class="message-centre-layout">
+                <aside class="message-list-panel">
+                    <div class="message-list-header"><button class="btn btn-primary" id="compose-btn"><span class="mdi mdi-plus-circle-outline"></span>Compose New Message</button></div>
+                    <ul class="message-list">
+                        <li class="message-item active" data-target="thread1"><span class="message-subject">Re: Question about my annual statement</span><p class="message-excerpt">Hi John, thanks for getting in touch. We've checked your statement and...</p><div class="message-meta"><span><span class="status-dot status-replied"></span>Replied</span><span>28 Aug 2025</span></div></li>
+                        <li class="message-item" data-target="thread2"><span class="message-subject">Update to my contact details</span><p class="message-excerpt">Hello, I need to update the mobile number you have on file for me. Can you...</p><div class="message-meta"><span><span class="status-dot status-sent"></span>Sent</span><span>15 Jul 2025</span></div></li>
+                    </ul>
+                </aside>
+                <section class="message-view-panel">
+                    <div id="thread1" class="content-view active">
+                        <div class="thread-header"><h3>Re: Question about my annual statement</h3></div>
+                        <div class="thread-body"><div class="message-bubble support-message">Hi John, thanks for getting in touch. We've checked your statement and can confirm the amount shown is correct. Please let us know if you have any other questions.<div class="message-bubble-meta">From: Member Services Team - 28 Aug 2025, 11:45 AM</div></div><div class="message-bubble user-message">Hello, I had a quick question about my annual statement from last month. I wasn't sure about one of the figures listed. Could you please clarify? Thanks.<div class="message-bubble-meta">From: You - 27 Aug 2025, 03:20 PM</div></div></div>
+                        <div class="thread-reply-area"><form><div class="form-group"><label for="reply-message">Your Reply</label><textarea id="reply-message" placeholder="Type your reply here..."></textarea></div><div class="form-actions"><button type="submit" class="btn btn-primary">Send Reply</button></div></form></div>
+                    </div>
+                    <div id="thread2" class="content-view">
+                        <div class="thread-header"><h3>Update to my contact details</h3></div>
+                        <div class="thread-body"><div class="message-bubble user-message">Hello, I need to update the mobile number you have on file for me. Can you please let me know the process for this?<div class="message-bubble-meta">From: You - 15 Jul 2025, 09:10 AM</div></div></div>
+                        <div class="thread-reply-area"><p>Awaiting reply from Member Services.</p></div>
+                    </div>
+                    <div id="compose-view" class="content-view">
+                        <div class="compose-header"><h3>Compose New Secure Message</h3></div>
+                        <div class="compose-body"><form><div class="form-group"><label for="to">To:</label><input type="text" id="to" value="Member Services Team" disabled></div><div class="form-group"><label for="subject">Subject</label><select id="subject"><option>General Enquiry</option><option>Question about my annual statement</option><option>Update my personal details</option><option>Question about my contributions</option><option>Other (please specify below)</option></select></div><div class="form-group"><label for="message">Your Message</label><textarea id="message" required></textarea></div><div class="form-group"><label for="attachment">Attach a file (optional)</label><input type="file" id="attachment-file"><label for="attachment-file" id="attachment-label"><span class="mdi mdi-paperclip"></span> Choose file...</label><span id="attachment-name"></span></div><div class="form-actions"><button type="submit" class="btn btn-primary">Send Secure Message</button></div></form></div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+        
+<script src="./scripts.js"></script>
+</body>
+</html>
